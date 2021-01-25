@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="9" passed="9">
+  <reporter-output>
+  </reporter-output>
+  <suite name="hotelReservation" duration-ms="35173" started-at="2021-01-25T02:13:45Z" finished-at="2021-01-25T02:14:20Z">
+    <groups>
+    </groups>
+    <test name="Create01" duration-ms="35173" started-at="2021-01-25T02:13:45Z" finished-at="2021-01-25T02:14:20Z">
+      <class name="com.flightReservation.testCases.SearchFlights">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.flightReservation.testCases.SearchFlights@19dfb72a]" name="setup" is-config="true" duration-ms="6375" started-at="2021-01-25T02:13:45Z" finished-at="2021-01-25T02:13:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="clickFlightbutton()[pri:1, instance:com.flightReservation.testCases.SearchFlights@19dfb72a]" name="clickFlightbutton" duration-ms="111" started-at="2021-01-25T02:13:52Z" finished-at="2021-01-25T02:13:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickFlightbutton -->
+        <test-method status="PASS" signature="selectTripType()[pri:2, instance:com.flightReservation.testCases.SearchFlights@19dfb72a]" name="selectTripType" duration-ms="7380" started-at="2021-01-25T02:13:52Z" finished-at="2021-01-25T02:13:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectTripType -->
+        <test-method status="PASS" signature="selectAdultPassengers()[pri:3, instance:com.flightReservation.testCases.SearchFlights@19dfb72a]" name="selectAdultPassengers" duration-ms="211" started-at="2021-01-25T02:13:59Z" finished-at="2021-01-25T02:13:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectAdultPassengers -->
+        <test-method status="PASS" signature="selectChildPassengers()[pri:4, instance:com.flightReservation.testCases.SearchFlights@19dfb72a]" name="selectChildPassengers" duration-ms="130" started-at="2021-01-25T02:13:59Z" finished-at="2021-01-25T02:14:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectChildPassengers -->
+        <test-method status="PASS" signature="selectInfantPassener()[pri:5, instance:com.flightReservation.testCases.SearchFlights@19dfb72a]" name="selectInfantPassener" duration-ms="243" started-at="2021-01-25T02:14:00Z" finished-at="2021-01-25T02:14:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectInfantPassener -->
+        <test-method status="PASS" signature="selectClassType()[pri:6, instance:com.flightReservation.testCases.SearchFlights@19dfb72a]" name="selectClassType" duration-ms="10445" started-at="2021-01-25T02:14:00Z" finished-at="2021-01-25T02:14:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectClassType -->
+        <test-method status="PASS" signature="selectToCity()[pri:8, instance:com.flightReservation.testCases.SearchFlights@19dfb72a]" name="selectToCity" duration-ms="3312" started-at="2021-01-25T02:14:10Z" finished-at="2021-01-25T02:14:14Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectToCity -->
+        <test-method status="PASS" signature="selectDepDate()[pri:9, instance:com.flightReservation.testCases.SearchFlights@19dfb72a]" name="selectDepDate" duration-ms="3406" started-at="2021-01-25T02:14:14Z" finished-at="2021-01-25T02:14:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectDepDate -->
+        <test-method status="PASS" signature="selectRetDate()[pri:10, instance:com.flightReservation.testCases.SearchFlights@19dfb72a]" name="selectRetDate" duration-ms="3537" started-at="2021-01-25T02:14:17Z" finished-at="2021-01-25T02:14:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectRetDate -->
+      </class> <!-- com.flightReservation.testCases.SearchFlights -->
+    </test> <!-- Create01 -->
+  </suite> <!-- hotelReservation -->
+</testng-results>
