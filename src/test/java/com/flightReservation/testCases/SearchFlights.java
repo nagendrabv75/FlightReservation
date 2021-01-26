@@ -16,6 +16,7 @@ public class SearchFlights extends BaseClass{
 	public static void clickFlightbutton()
 	{
 		driver.findElement(By.xpath("//body/c-wiz[2]/div[1]/div[2]/div[1]/c-wiz[1]/div[1]/div[1]/div[1]/div[2]/div[1]/span[3]/a[1]/button[1]/i[1]")).click();
+		logger.info("Application launched");
 		Assert.assertTrue(true);
 	}
 	
@@ -30,6 +31,9 @@ public class SearchFlights extends BaseClass{
 		Thread.sleep(5000);
 		
 		TicketTypeList.get(0).findElement(By.xpath("//body/c-wiz[2]/div[1]/div[2]/div[1]/c-wiz[1]/div[1]/c-wiz[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[2]/div[2]/ul[1]/li[1]")).click();
+		logger.info("Type of trip selected");
+
+		
 		Assert.assertTrue(true);
 
 	}
@@ -44,6 +48,8 @@ public class SearchFlights extends BaseClass{
 		driver.findElement(By.xpath("//body/c-wiz[2]/div[1]/div[2]/div[1]/c-wiz[1]/div[1]/c-wiz[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[1]/div[1]/div[1]/button[2]")).click();
 		driver.findElement(By.xpath("//div[@id='c0-1']"));
 		driver.findElement(By.xpath("//body/c-wiz[2]/div[1]/div[2]/div[1]/c-wiz[1]/div[1]/c-wiz[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[1]"));
+		logger.info("Number of adult passengers selected");
+
 		Assert.assertTrue(true);
 		
 	}
@@ -61,6 +67,8 @@ public class SearchFlights extends BaseClass{
 		driver.findElement(By.xpath("//div[@id='c0-2']"));
 		//driver.findElement(By.xpath("//body/c-wiz[2]/div[1]/div[2]/div[1]/c-wiz[1]/div[1]/c-wiz[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[2]"));
 		driver.findElement(By.xpath("//body/c-wiz[2]/div[1]/div[2]/div[1]/c-wiz[1]/div[1]/c-wiz[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[1]"));
+		logger.info("Number of child passengers selected");
+
 		Assert.assertTrue(true);
 
 	}
@@ -75,6 +83,8 @@ public class SearchFlights extends BaseClass{
 		driver.findElement(By.xpath("//div[@id='c0-3']"));
 		driver.findElement(By.xpath("//body/c-wiz[2]/div[1]/div[2]/div[1]/c-wiz[1]/div[1]/c-wiz[1]/div[2]/div[1]/div[1]/div[1]/div[2]/div[1]/div[2]/ul[1]/li[3]/div[1]/div[1]/button[2]")).click();
 		clickDone();
+		logger.info("Number of infant passengers selected");
+
 		Assert.assertTrue(true);
 
 	}
@@ -89,50 +99,16 @@ public class SearchFlights extends BaseClass{
 		pressDownArrow();
 		pressDownArrow();
 		callTabMethod();
+		logger.info("Type of seat/class selected");
+
+		
 		Assert.assertTrue(true);
 
 	}
 	
 	
-	/*@Test(priority=7)
-	public static void selectFromCity() throws InterruptedException
-	{
-		//driver.findElement(By.xpath("/body/c-wiz[2]/div[1]/div[2]/div[1]/c-wiz[1]/div[1]/c-wiz[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[6]/div[2]"));
-		//driver.findElement(By.xpath("//body/c-wiz[2]/div[1]/div[2]/div[1]/c-wiz[1]/div[1]/c-wiz[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[6]/div[2]/div[2]"));
-		//driver.findElement(By.xpath("//body/c-wiz[2]/div[1]/div[2]/div[1]/c-wiz[1]/div[1]/c-wiz[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[6]/div[2]/div[2]/div[1]"));
-		//WebElement fromCity = driver.findElement(By.xpath("//body/c-wiz[2]/div[1]/div[2]/div[1]/c-wiz[1]/div[1]/c-wiz[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[6]/div[2]/div[2]/div[1]/div[1]/input[1]"));
-		
-		
-		
-		WebElement fromCity=driver.findElement(By.xpath("//body/c-wiz[2]/div[1]/div[2]/div[1]/c-wiz[1]/div[1]/c-wiz[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]/div[1]/input[1]"));
-		//fromCity.sendKeys(Keys.chord(Keys.CONTROL,"a",Keys.DELETE), "SYD");
-		
-		
-		fromCity.clear();
-		Thread.sleep(3000);
-		String  City="Sy";
-		
-		char[] charsCity = City.toCharArray();
-		
-		for(int i=0 ;i <charsCity.length;i++)
-		{
-			fromCity.sendKeys(String.valueOf(charsCity[i]).toString());
-			Thread.sleep(2000);
-		}
-		
-		for(int i=0;i<City.length();i++)
-		{
-			fromCity.sendKeys(Character.toString(City.charAt(i)));
-		//	waitUntil(attributeContains(fromCity,"value",City.substring(0,i)));
-			
-			
-		}
-		
-		Thread.sleep(3000);
-		callTabMethod();
-	}*/
 	
-	@Test(priority=8)
+	@Test(priority=7)
 	//Method to Enter/Select the Destination Country/City
 
 	public static void selectToCity() throws InterruptedException
@@ -143,11 +119,13 @@ public class SearchFlights extends BaseClass{
 		Dest.clear();
 		Dest.sendKeys(Destination);
 		callTabMethod();
+		logger.info("Destination city selected");
+
 		Assert.assertTrue(true);
 
 	}
 	
-	@Test(priority=9)
+	@Test(priority=8)
 	//Method to select the Departure date
 
 	public static void selectDepDate() throws InterruptedException
@@ -156,11 +134,13 @@ public class SearchFlights extends BaseClass{
 		DepDate.sendKeys(Keys.chord(Keys.CONTROL, "a", Keys.DELETE),"" );
 		DepDate.sendKeys(DepDt);
 		callTabMethod();
+		logger.info("Departure date selected");
+
 		Assert.assertTrue(true);
 
 	}
 	
-	@Test(priority=10)
+	@Test(priority=9)
 	//Method to select the Arrival date
 
 	public static void selectRetDate() throws InterruptedException
@@ -169,6 +149,8 @@ public class SearchFlights extends BaseClass{
 		RetDate.sendKeys(Keys.chord(Keys.CONTROL, "a", Keys.DELETE), "");
 		RetDate.sendKeys(RetDt);
 		
+		logger.info("Return date selected");
+
 		callTabMethod();
 		Assert.assertTrue(true);
 
